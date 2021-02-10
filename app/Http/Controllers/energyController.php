@@ -12,7 +12,7 @@ class energyController extends Controller
     {
        $energyprovider = new Eneryprovider();
        $data2= $energyprovider->energyprovider($energyprovidername, $product,$variant);
-       return response()->json('price', $data2[0]->price);
+       return response()->json( $data2[0]->price);
 
     }
 
